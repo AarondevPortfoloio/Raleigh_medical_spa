@@ -1,0 +1,320 @@
+header {
+
+}
+
+nav {
+
+}
+
+footer {
+    
+}
+
+body {
+    font: 100% Lucida Sans, Verdana;
+    font-size: 20px;
+    margin: 20px;
+    line-height: 26px;
+    background-color: #e2ecf5;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#sidebar {
+    background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+}
+
+.menuitem:first-child {
+   background-color:#04AA6D;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+
+.column {
+    margin-left: 250px;
+    float: left;
+    width: 50%;
+    display: inline;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #07429A;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+  }
+
+.sidenav h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFFFFF;
+}
+
+.sidenav p{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFFFFF;
+
+}
+
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    margin: 20px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .h1_index{
+      text-align: Center;
+      background-color: rgba(255, 255, 255, 0.6);
+      top:0px;
+      
+  }
+
+
+  .fill{
+      float:right;
+      background-position: center;
+      background-size: 100%;
+      
+       }    
+                
+
+       /* Whole html box designing */
+    html {
+        box-sizing: border-box;
+    }
+     
+    /* Body width fixing */
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url('model/Raleigh_Medicalhome1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+     
+    /* Box sizing depending on parent */
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+     
+    /* Styling column */
+    .column {
+        float: center;
+        width: 33%;
+        margin-bottom: 16px;
+        padding: 5px 10px;
+    }
+     
+
+    /* Column width change depends on screen size */
+    @media screen and (max-width: 670px) {
+        .column {
+            width: 100%;
+            text-align: none;
+            position: right;
+        }
+    }
+     
+    /* Card designing */
+    .card {
+        background-color: whitesmoke;
+        border: 1px solid #07429A;
+        
+    }
+     
+    .container {
+        padding: 0 16px;
+    }
+     
+    /* Icon styling */
+    .fa {
+        margin: 10px;
+        font-size:68px;
+
+    }
+     
+    .fa:hover {
+        transform: rotateY(180deg);
+        transition: transform 0.8s;
+    }
+     
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+     
+    /* Button designing */
+    .button {
+        border: none;
+        padding: 20px;
+        color: white;
+        background-color: #07429A;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+     
+    /* Hover effect on button */
+    .button:hover {
+        background-color: #2671e1;
+    }
+ 
+    /* Margining first member of team */
+    #gfg {
+        float:none;
+        margin:auto;
+    }
+
+    .main p{
+        font-size: 25px;
+    }
+
+    /*input[type="button" i]{
+        padding: 20px;
+        color: white;
+        background-color: #07429A;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }*/
